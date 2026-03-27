@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><title>Login</title>
+<style>
+    body { font-family: Arial, sans-serif; background-color: #3498db; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 300px; text-align: center; }
+    input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { width: 100%; padding: 10px; background-color: #3498db; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    a { color: #3498db; text-decoration: none; font-size: 14px; display: block; margin-top: 15px; }
+</style></head>
+<body>
+    <div class="card">
+        <h2>Member Login</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="/">← Back to Home</a>
+        <a href="/register">Don't have an account? Register</a>
+    </div>
+</body></html>
