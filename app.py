@@ -105,6 +105,8 @@ def delete_task(task_id):
 def logout():
     session.pop('username', None)
     return redirect(url_for('home'))
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    import os
+    # Render environment se port uthayega, agar nahi mila toh 5000 use karega
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
