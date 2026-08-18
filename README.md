@@ -1,53 +1,127 @@
 # ✅ Hackathon Task Manager
 
-A lightweight Flask-based task manager built for hackathon teams who need to track tasks, ownership, and progress without the overhead of a full project-management tool.
+A lightweight **Flask-based task manager** built for hackathon teams to create, track, complete, and delete tasks with a simple login-based dashboard.
 
-## Features
-- Create and view tasks for your hackathon team
-- Lightweight, single-server setup — no external dependencies beyond Flask
-- Simple HTML templates for a fast, no-friction UI during time-pressured hackathon use
+## 🚀 Live Demo
 
-## Tech Stack
-- Python 3
-- Flask
-- Jinja2 templates (HTML)
+👉 **[Open Hackathon Task Manager](https://hackathon-task-manager.onrender.com)**
 
-## Installation
+The application is deployed on **Render** and is available online.
+
+## ✨ Features
+
+- 🔐 User registration and login
+- 📋 Create new tasks
+- 👤 Automatically assign tasks to the logged-in user
+- ⏳ Track task status
+- ✅ Mark tasks as completed
+- 🗑️ Delete tasks
+- 🚪 Logout functionality
+- 🌐 Live deployment on Render
+- 📱 Simple and lightweight web interface
+
+## 🛠️ Tech Stack
+
+- **Python 3**
+- **Flask** – Backend framework
+- **Jinja2** – HTML templating
+- **HTML/CSS** – Frontend
+- **JSON** – Data storage
+- **Render** – Deployment
+
+## 📂 Project Structure
+
+```text
+hackathon-task-manager/
+├── app.py                  # Flask application and routes
+├── requirements.txt        # Python dependencies
+├── templates/
+│   ├── index.html          # Home page
+│   ├── login.html           # Login page
+│   ├── register.html        # Registration page
+│   └── dashboard.html       # Task dashboard
+├── data/                    # User and task data files
+├── README.md                # Project documentation
+└── requiremnets.txt         # Duplicate requirements file
+```
+
+## ⚙️ Run Locally
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Bhavyashah2710/hackathon-task-manager.git
 cd hackathon-task-manager
+```
+
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 3. Start the application
+
+```bash
 python app.py
 ```
 
-Then open your browser to `http://localhost:5000`.
+### 4. Open in browser
 
-## Usage
-1. Run `python app.py` to start the local server
-2. Add tasks for your team through the web interface
-3. Track task status as your hackathon progresses
-
-## Screenshots
-> _Add a screenshot of the task list / task creation view here._
-> `![Task list](screenshots/task-list.png)`
-
-## Project Structure
-```
-hackathon-task-manager/
-├── app.py              # Flask application entry point and routes
-├── templates/           # Jinja2 HTML templates
-├── requirements.txt     # Python dependencies
-└── README.md
+```text
+http://localhost:5000
 ```
 
-## Future Improvements
-- [ ] Add task ownership/assignment to specific team members
-- [ ] Add task status (To Do / In Progress / Done) with a simple board view
-- [ ] Add persistent storage (SQLite) instead of in-memory state, if not already present
-- [ ] Add basic auth so each team's board is private
-- [ ] Add a `pytest` test suite covering the core routes
-- [ ] Deploy a live demo (Render/Railway/Heroku free tier)
+## 📖 How to Use
 
-## Author
+1. Open the application.
+2. Create a new account using the **Register** page.
+3. Login with your username and password.
+4. Add tasks from the dashboard.
+5. Mark tasks as **Completed** when finished.
+6. Delete tasks when they are no longer needed.
+7. Logout when finished.
+
+## ☁️ Deployment
+
+This project is deployed using **Render**.
+
+**Build Command:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Start Command:**
+
+```bash
+gunicorn app:app
+```
+
+### Live URL
+
+https://hackathon-task-manager.onrender.com
+
+## 🔮 Future Improvements
+
+- [ ] Add task priority levels
+- [ ] Add due dates and deadlines
+- [ ] Add team member assignment
+- [ ] Add task categories
+- [ ] Add a Kanban-style board
+- [ ] Improve password security with password hashing
+- [ ] Move data storage from JSON to SQLite/PostgreSQL
+- [ ] Add proper database persistence for production deployment
+- [ ] Add automated tests with `pytest`
+- [ ] Improve responsive design
+
+## 👨‍💻 Author
+
 **Bhavya Shah**
-GitHub: [@Bhavyashah2710](https://github.com/Bhavyashah2710)
+
+- GitHub: [@Bhavyashah2710](https://github.com/Bhavyashah2710)
+- Project: [Hackathon Task Manager](https://github.com/Bhavyashah2710/hackathon-task-manager)
+
+---
+
+⭐ If you found this project useful, consider giving the repository a star!
